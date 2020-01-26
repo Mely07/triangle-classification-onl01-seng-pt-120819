@@ -8,8 +8,8 @@ class Triangle
   end
   
   def kind 
-    if((@l1<=0)||(@l2<=0)||(@l3<=0)) || 
-      # ((@l1+@l2>@l3)||(@l1+@l3>@l2)||(@l2+@l3>@l1))
+    # ((@l1+@l2>@l3)||(@l1+@l3>@l2)||(@l2+@l3>@l1))
+    if (@l1<=0) || (@l2<=0) || (@l3<=0) 
       raise TriangleError
     
     if (@l1 == @l2 && @l2 == @l3)
