@@ -17,7 +17,7 @@ class Triangle
     elsif (@l1 == @l2 )||(@l1==@l3)||(@l2==@l3)
       return :isosceles
     
-    else (Triangle.kind != :equilateral && self.kind != :isosceles)
+    elsif (Triangle.kind != :equilateral && self.kind != :isosceles)
       return :scalene
     end
 
