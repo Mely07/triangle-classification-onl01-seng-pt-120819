@@ -12,13 +12,13 @@ class Triangle
       raise TriangleError
     
     elsif (@l1 == @l2 && @l2 == @l3)
-      :equilateral
+      return :equilateral
     
     elsif (@l1 == @l2 )||(@l1==@l3)||(@l2==@l3)
-      :isosceles
+      return :isosceles
     
     elsif (self.kind != :equilateral && self.kind != :isosceles)
-      :scalene
+      return :scalene
     end
     
   end
