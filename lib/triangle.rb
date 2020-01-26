@@ -17,9 +17,12 @@ class Triangle
     elsif (@l1 == @l2 )||(@l1==@l3)||(@l2==@l3)
       return :isosceles
     
-    else #if (self.kind != :equilateral && self.kind != :isosceles)
+    elsif (self.kind != :equilateral && self.kind != :isosceles)
       return :scalene
     end
+    
+    elsif((@l1<=0)||(@l2<=0)||(@l3<=0)) || ((@l1+@l2>@l3)||(@l1+@l3>@l2)||(@l2+@l3>@l1))
+     # raise TriangleError
     
   end
   
